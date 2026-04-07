@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everforge-Pedidos</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--links a todas las páginas-->
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img width="300" height="200" src="../assets/images/logo.pngs" alt="Everforge">
+    </div>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="merch.html">Tienda</a></li>
+        <li><a href="pedidos.html" class="activo">Pedidos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Quienes somos</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--seccion pedidos-->
+  <main class="pedido">
+    <section class="zona-pedido">
+      <h2>Pedidos</h2>
+      <p>Realiza tus pedidos aquí</p>
+
+      <form class="form-pedido">
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" name="Nombre" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="numero">Número de teléfono</label>
+        <input type="tel" id="numero" name="numero-telefono" required>
+
+        <label for="direccion">Dirección de envío</label>
+        <input type="text" id="direccion" name="direccion-envio" required>
+
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" name="cantidad" required>
+
+        <label for="mensaje">Comentarios</label>
+        <textarea id="mensaje" rows="4"></textarea>
+
+        <label class="privacidad">
+          <input type="checkbox" required>
+          Acepto la política de privacidad
+        </label>
+
+        <input type="submit" value="Realizar Pedido" class="btn-primary">
+
+        <p class="registro">
+          ¿No tienes cuenta?
+          <a href="login.html">Regístrate</a> y disfruta de descuentos
+          exclusivos, acumula puntos y ¡mucho más!
+        </p>
+      </form>
+    </section>
+  </main>
+  <!--footer-->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="montserrat-bold">Everforge</h3>
+        <p class="montserrat-regular">Equipando a los héroes de Azeroth.</p>
+      </div>
+      <div class="footer-section">
+        <h4 class="montserrat-bold">Contacto</h4>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:contacto@everforge.com">contacto@everforge.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="montserrat-bold">Encuentranos</h4>
+        <ul>
+          <li>Dirección:Calle Azeroth 12, 28000 Ventormenta, España</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="montserrat-bold">Legal</h4>
+        <ul>
+          <li><a href="aviso-legal.html">Aviso Legal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="montserrat-bold">Síguenos</h4>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" class="insta-link">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+
+          <a href="https://facebook.com" target="_blank" class="facebook-link">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+
+          <a href="https://twitter.com" target="_blank" class="twitter-link">
+            <i class="fa-brands fa-x-twitter"></i> Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="montserrat-regular">
+        &copy; 2026 Everforge - ¡Por la Alianza y la Horda!
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

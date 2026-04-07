@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everforge - Login</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!--links a todas las páginas-->
+
+<body>
+  <header>
+    <div class="logo">
+      <img width="300" height="200" src="../assets/images/logo.png" alt="Everforge">
+    </div>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="merch.html">Tienda</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Quienes somos</a></li>
+        <li><a href="login.html" class="activo">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--seccion login-->
+  <main>
+    <h1 class="active">Login</h1>
+    <form>
+      <label for="user">user:</label>
+      <input type="text" id="user" name="user" required>
+      <label for="password">password:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Login" class="btn-primary">
+      Si no tienes una cuenta, <a href="registro.html">registrate aqui!</a>.
+    </form>
+  </main>
+  <!--footer-->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2 class="montserrat-bold">Everforge</h2>
+        <p class="montserrat-regular">Equipando a los héroes de Azeroth.</p>
+      </div>
+      <div class="footer-section">
+        <h3 class="montserrat-bold">Contacto</h3>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:contacto@everforge.com">contacto@everforge.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="montserrat-bold">Encuentranos</h3>
+        <ul>
+          <li>Dirección:Calle Azeroth 12, 28000 Ventormenta, España</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="montserrat-bold">Legal</h3>
+        <ul>
+          <li><a href="aviso-legal.html">Aviso Legal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3 class="montserrat-bold">Síguenos</h3>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" class="insta-link">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+
+          <a href="https://facebook.com" target="_blank" class="facebook-link">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+
+          <a href="https://twitter.com" target="_blank" class="twitter-link">
+            <i class="fa-brands fa-x-twitter"></i> Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="montserrat-regular">
+        &copy; 2026 Everforge - ¡Por la Alianza y la Horda!
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
