@@ -162,6 +162,13 @@ header nav ul li a.active {
 .btn-primary:active {
   transform: scale(0.98);
 }
+.btn-regs {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff7a00;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /* ======================================================
    HERO
@@ -567,6 +574,8 @@ form input.btn-primary {
 .registro-login a:hover {
   text-decoration: underline;
 }
+
+
 /* ======================================================
    FOOTER 
 ====================================================== */
