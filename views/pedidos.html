@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="logo">
-      <img width="300" height="200" src="../assets/images/logo.pngs" alt="Everforge">
+      <img width="300" height="200" src="../assets/images/logo.png" alt="Everforge">
     </div>
     <nav aria-label="Menú principal">
       <ul>
@@ -33,20 +33,29 @@
       <p>Realiza tus pedidos aquí</p>
 
       <form class="form-pedido">
+
         <label for="Nombre">Nombre</label>
-        <input type="text" id="Nombre" name="Nombre" required>
+        <input type="text" id="Nombre" name="Nombre" required pattern="^[A-Za-zÁéíóúÁÉÍÓÚñÑ ]{3,50}$"
+          title="El nombre debe tener al menos 3 letras y no contener números.">
+
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
 
+
         <label for="numero">Número de teléfono</label>
-        <input type="tel" id="numero" name="numero-telefono" required>
+        <input type="tel" id="numero" name="numero-telefono" required pattern="[0-9]{9}"
+          title="Debe ser un número de teléfono válido de 9 dígitos.">
+
 
         <label for="direccion">Dirección de envío</label>
-        <input type="text" id="direccion" name="direccion-envio" required>
+        <input type="text" id="direccion" name="direccion-envio" required pattern=".{5,}"
+          title="La dirección debe ser más detallada (mínimo 5 caracteres).">
+
 
         <label for="cantidad">Cantidad</label>
-        <input type="number" id="cantidad" name="cantidad" required>
+        <input type="number" id="cantidad" name="cantidad" required min="1" max="1000"
+          title="La cantidad debe ser entre 1 y 1000.">
 
         <label for="mensaje">Comentarios</label>
         <textarea id="mensaje" rows="4"></textarea>
@@ -57,13 +66,30 @@
         </label>
 
         <input type="submit" value="Realizar Pedido" class="btn-primary">
-
-        <p class="registro">
-          ¿No tienes cuenta?
-          <a href="login.html">Regístrate</a> y disfruta de descuentos
-          exclusivos, acumula puntos y ¡mucho más!
-        </p>
       </form>
+
+      <script>
+
+        const inputs = document.querySelectorAll('input[pattern]');
+        inputs.forEach(input => {
+          input.oninvalid = function (e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+              e.target.setCustomValidity(e.target.getAttribute("title"));
+            }
+          };
+          input.oninput = function (e) {
+            e.target.setCustomValidity("");
+          };
+        });
+      </script>
+
+      <p class="registro">
+        ¿No tienes cuenta?
+        <a href="login.html">Regístrate</a> y disfruta de descuentos
+        exclusivos, acumula puntos y ¡mucho más!
+      </p>
+
     </section>
   </main>
   <!--footer-->
